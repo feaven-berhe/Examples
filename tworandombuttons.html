@@ -7,61 +7,59 @@
 
 
   <script>
-    var leftButton;
+    var completelyLeft;
     var rightButton; 
-    var randomColor;
     var color;
-    var letter; 
     
     $(function(){
       completelyLeft=$("#completelyLeft");
-      completelyLeft.click(displayCompletelyLeft); 
+      completelyLeft.click(changeCompletelyLeft); 
       completelyRight=$("#completelyRight");
-      completelyRight.click(displayCompletelyRight);
+      completelyRight.click(changeCompletelyRight);
       partiallyLeft=$("#partiallyLeft");
-      partiallyLeft.click(displayPartiallyLeft);
+      partiallyLeft.click(changePartiallyLeft);
       partiallyRight=$("#partiallyRight");
-      partiallyRight.click(displayPartiallyRight);
+      partiallyRight.click(changePartiallyRight);
       }); 
 
 //------------------------------------------------------------------------------------
-function displayCompletelyLeft(){
+function changeCompletelyLeft(){
  displayComplete();
-    document.getElementById('leftDiv').style.backgroundColor=randomColor;
-    console.log("displaying hexadecimal color: " + randomColor);
+    document.getElementById('leftDiv').style.backgroundColor=color;
+    console.log(color);
 
 }
        
 //------------------------------------------------------------------------------------
-function displayCompletelyRight(){
+function changeCompletelyRight(){
  displayComplete();
- document.getElementById('rightDiv').style.backgroundColor= randomColor;
-    console.log("displaying hexadecimal color: " + randomColor);
+ document.getElementById('rightDiv').style.backgroundColor= color;
+    console.log( color);
 
 }
        
 
 //------------------------------------------------------------------------------------
 
-function displayPartiallyLeft(){
+function changePartiallyLeft(){
  displayPartial();
  document.getElementById('leftDiv').style.backgroundColor= color;
-    console.log("displaying hexadecimal color: " + color);
+    console.log( color);
 
 }
        
 
 //------------------------------------------------------------------------------------
 
-function displayPartiallyRight(){
+function changePartiallyRight(){
  displayPartial();
  document.getElementById('rightDiv').style.backgroundColor= color;
-    console.log("displaying hexadecimal color: " + color);
+    console.log(color);
 
 }
 //------------------------------------------------------------------------------------
 function displayPartial(){     
-    console.log("displaying left div");
+    console.log("displaying a partially random color: ");
     color = '#';
     letters= ['FF0000', '00FF00', '0000FF', 'FFFF00', '00FFFF', 'FF00FF', 'C0C0C0'];
     color+= letters[Math.floor(Math.random() *letters.length)]; 
@@ -70,8 +68,8 @@ function displayPartial(){
 
 //-----------------------------------------------------------------------------------
 function displayComplete(){
-    console.log("completely random");
-    randomColor ="#000000".replace(/0/g,function(){return (~~(Math.random()*16)).toString(16);});
+    console.log("displaying a completely random color: ");
+    color ="#000000".replace(/0/g,function(){return (~~(Math.random()*16)).toString(16);});
  
 
 }
@@ -132,7 +130,7 @@ function displayComplete(){
 
   <body>
 
-    <h1> Independent Farms in the USA </h1>
+    <h1> Fun with the Buttons</h1>
     <h2> Two Boxes </h2>
 
     <div id="outermostDiv"> 
