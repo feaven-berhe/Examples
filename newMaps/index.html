@@ -40,46 +40,47 @@ path{
     border: 1px;
     border-radius: 8px;
     pointer-events: none;
+    white-space: pre;
+
     }
- svg.map{
 
-  }
-//----------------------------------------------
-  p{
-  text-align: center;
-  font-style: italic;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 40px;
-  font-weight: bold;
-  }
-#outermostDiv{
-  margin: 10px;
-  height: 87%;
-  }
+  button{
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+    font-weight: bold; 
+    margin-left: 10px; 
+    }
+  #outermostDiv{
+    margin: 10px;
+    height: 87%;
+    }
 
-#leftDiv{
-  border-style: solid;
-  background-color: #E0FFE0;
-  margin: 10px; 
-  width: 100%;
-  height: 90%;
-  }
+  #leftMap{
+    border-style: solid;
+    background-color: #E0FFE0;
+    margin: 10px; 
+    width: 100%;
+    height: 90%;
+    }
 
-#rightDiv{
-  border-style: solid; 
-  background-color: #E0E0FF;
-  margin: 10px; 
-  width: 100%;
-  height: 90%;
-  }
+  #rightMap{
+    border-style: solid; 
+   background-color: #E0E0FF;
+    margin: 10px; 
+    width: 100%;
+    height: 90%;
+    }
   
-</style>
+  </style>
 
 <script>
 
    
   var leftButton;
   var rightButton;
+  var leftDiv;
+  var rightDiv; 
 
 $(function(){
   console.log("ready!");
@@ -151,7 +152,7 @@ console.log("display left map");
           d3.select(this).transition().duration(300).style("opacity", 1);
           div.transition().duration(300)
              .style("opacity", 1)
-          div.text(pairNameWithId[d.id] + " : " + pairRateWithId[d.id])
+          div.text(pairNameWithId[d.id] + ": " + '\n'+  pairRateWithId[d.id])
              .style("left", (d3.event.pageX) + "px")
              .style("top", (d3.event.pageY -30) + "px");
           }) // on mouseover
@@ -248,7 +249,7 @@ console.log("displaying right map");
           d3.select(this).transition().duration(300).style("opacity", 1);
           div.transition().duration(300)
              .style("opacity", 1)
-          div.text(pairNameWithId[d.id] + " : " + pairRateWithId[d.id])
+          div.text(pairNameWithId[d.id] + ": "+ '\n' + pairRateWithId[d.id])
              .style("left", (d3.event.pageX) + "px")
              .style("top", (d3.event.pageY -30) + "px");
           }) // on mouseover
@@ -293,38 +294,33 @@ function handleWindowResize(event)
    
 } // handleWindowResize
 <!------------------------------------------------------------------------------------------------------>
-</script>
-</head>
+  </script>
+  </head>
 
-<body>
-  <h1> Independent Farms in the USA </h1>
-
-    <div id="outermostDiv">    
-      <table style="width:100%; height: 100%">
-        <tr>
-          <td style="width:50%">
-	    <button id="leftButton">click me </button> 
-            <div id="leftDiv">
-	      <svg id='leftMap' xlmns="http://w3.org/2000/svg" viewBox="0 0 960 500">
-              </svg> 
-	    </div>
-          </td>
-          <td style="width:50%">
-	    <button id="rightButton">click me </button> 
-            <div id="rightDiv">
-	      <svg id='rightMap'  xlmns="http://w3.org/2000/svg" viewBox="0 0 960 500">
-              </svg>
-	    </div>
-          </td>
-        </tr>
-    </table>
-  </div>
-</body>
+  <body>
+    <h1> Independent Farms in the USA </h1>
+      <div id="outermostDiv">    
+        <table style="width:100%; height: 100%">
+          <tr>
+            <td style="width:50%">
+	      <button id="leftButton">click me </button> 
+              <div id="leftDiv">
+	        <svg id='leftMap' xlmns="http://w3.org/2000/svg" viewBox="0 0 960 500">
+                </svg> 
+	      </div>
+            </td>
+            <td style="width:50%">
+	      <button id="rightButton">click me </button> 
+              <div id="rightDiv">
+	        <svg id='rightMap'  xlmns="http://w3.org/2000/svg" viewBox="0 0 960 500">
+                </svg>
+	      </div>
+            </td>
+          </tr>
+      </table>
+    </div>
+  </body>
 
 
 </html>
 
-
-<script  type="text/javascript">
-
-</script>
