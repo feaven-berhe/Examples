@@ -19,20 +19,16 @@
       }); 
 
 //------------------------------------------------------------------------------------
-function displayLeftMap(btn, color){     
-    console.log("displaying left div");
-    document.getElementById("leftDiv").style.backgroundColor = "rand";
-
-    }
+function displayLeftMap(){     
+  console.log("displaying leftMap");
+}
 
 //-----------------------------------------------------------------------------------
 function displayRightMap(){
-    console.log("displaying right div");
-     document.getElementById("rightDiv").style.backgroundColor = "#E0FFE0";
+  console.log("displaying RightMap");
 
 }
 //-------------------------------------------------------------------------------------
-
 
   </script>
       
@@ -46,41 +42,41 @@ function displayRightMap(){
     font-family: "Times New Roman", Times, serif; 
     font-size: 40px; 
     font-weight: bold; 
-    }
+  }
   button{
     margin-left: 10px;
     font-family: "Times New Roman", Times, serif;
     font-size: 18px;
-    }
+  }
   #outermostDiv{
     margin: 10px;
     height: 87%
-    }
+  }
   #leftDiv{
     border-style: solid; 
     background-color: #E0FFE0;
     margin: 10px;
     height: 95%;
-    }
+  }
   #rightDiv{
     border-style: solid; 
     background-color: #E0E0FF;
     margin: 10px;
     height: 95%;
-    }
+  }
   path {
     fill: none;
     stroke-linejoin: round;
-    }
+  }
 
   .land {
     fill: #ddd;
-    }
+  }
 
   .states,
   .hexagons path {
   stroke: #fff;
-    }
+  }
 
 </style>
 

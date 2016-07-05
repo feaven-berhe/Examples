@@ -1,4 +1,3 @@
-
 <html lang="en">
   <head>
   <title> USA Map </title>
@@ -17,7 +16,6 @@
       rightButton.click(displayRightMap);
        
       }); 
-
 //------------------------------------------------------------------------------------
 function displayLeftMap(btn, color){     
     console.log("displaying left div");
@@ -26,20 +24,15 @@ function displayLeftMap(btn, color){
     color+= letters[Math.floor(Math.random() *letters.length)];
     document.getElementById('leftDiv').style.backgroundColor= color;
     console.log("displaying hexadecimal color: " + color); 
-
     }
-
 //-----------------------------------------------------------------------------------
 function displayRightMap(){
     console.log("displaying right div");
     var randomColor ="#000000".replace(/0/g,function(){return (~~(Math.random()*16)).toString(16);});
     document.getElementById('rightDiv').style.backgroundColor=randomColor;
     console.log("displaying hexadecimal color: " + randomColor + "in the right div"); 
-
 }
 //-------------------------------------------------------------------------------------
-
-
   </script>
       
   </head>
@@ -78,16 +71,13 @@ function displayRightMap(){
     fill: none;
     stroke-linejoin: round;
     }
-
   .land {
     fill: #ddd;
     }
-
   .states,
   .hexagons path {
   stroke: #fff;
     }
-
 </style>
 
 

@@ -21,7 +21,8 @@
 //------------------------------------------------------------------------------------
 function displayLeftMap(btn, color){     
     console.log("displaying left div");
-    document.getElementById("leftDiv").style.backgroundColor = "rand";
+    var color = '#';
+    var letters ['000000', 'FF0000'. '00FF00', '0000FF', 'FFFF00', '00FFFF', 'FF00FF', 'C0C0C0'];
 
     }
 
