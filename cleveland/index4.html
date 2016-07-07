@@ -1,9 +1,11 @@
 <html>
   <head>
- <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
-  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+    <!-- jQuery --> 
+    <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
+    <!--Datatables --> 
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+    <!-- DataTables CSS --> 
   <link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css">
-  <script type="text/javascript" src="html2CSV.js" ></script>
 
 
   
@@ -28,6 +30,7 @@
 ];
       $(function(){
       $('#example').DataTable({
+     
           data: dataSet,
           columns: [
             {title: "ZipCode"},
@@ -65,9 +68,10 @@
 
   </head>
   <body>
+   <div style="margin: 40px">
     <div style="overflow:scroll; height:100%px; width:100%; overflow:auto">
-      <table id="example" class="display" cellspacing="0" width="100%" text-align="left"></table>
-      <input value="Export" type="button" onclick="$('#example').table2CSV({header:['zipCode','No College Degree','below 200pc Poverty Level','non-white minority population','adults w no health insurance','adults w no leisure time','under 5yrs (%)', '65yrs and Older (%)', 'Foreign-born', 'Diesel', 'Benzene', 'Hazard Ranking', 'Tree Canopy', 'Park/person (sq.ft.)', 'Toxic Facilities', 'Life expectancy at birth','overweight/obese', 'heart dz deaths/100k', 'stroke deaths/ 100k', 'diabetes (%)', 'hypertension (%)', 'child hospitalization asthma rate', 'adult smokers (%)', 'lung cancer deaths/100k', 'assault hosp/100k' ]})">
+      <table id="example" class="display" cellspacing="0" width="auto" text-align="left"></table>
+    </div>
     </div>
   </body>
 </html>
