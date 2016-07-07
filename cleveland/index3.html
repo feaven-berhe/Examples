@@ -1,0 +1,56 @@
+<html>
+  <head>
+ <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css">
+
+  
+    <script>
+      var dataSet = [
+      [ "No College Degree", "31.7", "23.8", "65.0", "41.4", "71.7", "45.3", "40.4", "56.8", "71.8", "32.2"],
+      ["Below 200pc Poverty Line", "22.5", "39.5", "27.3","18.9","32.4", "15.4", "30.9", "32.9", "29.9", "11.8"],
+      ["Non-white minority population", "17.5", "28.6", "48.8", "13.8", "71.2", "13", "36.6", "56.2", "70.1", "14.1"],
+      ["Adults No Health Insurance", "6", "10", "17", "7", "14", "18", "18", "12", "16", "2"],
+      ["Adults w No Leisure Time", "14", "9", "15", "11", "30", "14", "19", "13", "21", "9"],
+      ["Under 5 yrs (%)", "2.1", "3.4", "7.5", "50", "6.8", "5.5", "4.2", "5.9", "6.9", "5.7"],
+      ["65 yrs and Older (%)", "7.0", "5.8", "7.6", "8.7", "12.0", "13.6", "7.4", "12.9", "12.1", "13.9"],
+      
+     
+
+
+
+
+
+      
+];
+      $(function(){
+      $('#example').DataTable({
+          data: dataSet,
+          columns: [
+            {title: "ZipCode"},
+            {title: "98102"},
+            {title: "98105" },
+            {title: "98106" },
+            {title: "98107" },
+            {title: "98108" },
+            {title: "98116" },
+            {title: "98122" },
+            {title: "98144" },
+            {title: "98178" },
+            {title: "98199" },
+            
+      ]
+        }); 
+      });
+      
+     </script>
+    
+    <title>Creating a Table</title>
+
+  </head>
+  <body>
+    <div style="overflow:scroll; height:100%px; width:100%; overflow:auto">
+      <table id="example" class="display" cellspacing="0" width="100%"></table>
+    </div>
+  </body>
+</html>

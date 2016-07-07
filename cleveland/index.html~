@@ -1,0 +1,95 @@
+<html>
+  <script type="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css"><script>
+      <head>
+	
+	<script> 
+	  $(document).ready(function() {
+	  $('#dataSet').DataTable( {
+          "scrollX": true
+	  } );
+	  } );
+	</script>
+      </head>
+      
+<style>
+  div.dataTables_wrapper {
+        width: 800px;
+        margin: 0 auto;
+  }
+</style>
+
+
+<body>
+<table id="dataSet" class="display nowrap" cellspacing="0" width="100%">
+  <thead>
+    <tr>
+      <th>zipCode</th>
+      <th>no college degree</th>
+      <th>below 200pc Poverty Level</th>
+      <th>Non-white minority population</th>
+      <th>Adults No Health Insurance</th>
+      <th>Adults No Leisure Time</th>
+      <th>Percent Under 5 years</th>
+      <th>Percent Foreign-born</th>
+      <th>Diesel</th>
+      <th>Benzene</th>
+      <th>Hazard Ranking</th>
+      <th>Tree Canopy</th>
+      <th>sq ft park/person</th>
+      <th>toxic facilities</th>
+      <th>life expectancy at birth</th>
+      <th>overweight or obese</th>
+      <th>heart dz death per 100k</th>
+      <th>stroke deaths per 100k</th>
+      <th>percent diabetes</th>
+      <th>percent hypertension</th>
+      <th>child hospitalization asthma rate</th>
+      <th>percent adult smokers</th>
+      <th>lung cancer death per 100k </th>
+      <th>assault hosp per 100k</th>
+    </tr>
+  </thead>
+  <tbody> 
+    <tr>
+      <td>98102</td>
+      <td>31.7</td>
+      <td>22.5</td>
+      <td>17.5</td>
+      <td>6.0</td>
+      <td>14.0</td>
+      <td>2.1</td>
+      <td>7.0</td>
+      <td>11.3</td>
+      <td>2.2</td>
+      <td>2.9</td>
+      <td>18.0</td>
+      <td>8.0</td>
+      <td>175.0</td>
+      <td>2.0</td>
+      <td>83.6</td>
+      <td>48</td>
+      <td>110.7</td>
+      <td>37.0</td>
+      <td>2.0</td>
+      <td>16.0</td>
+      <td>182.0</td>
+      <td>16.0</td>
+      <td>23.4</td>
+      <td>20.4</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+</html>
